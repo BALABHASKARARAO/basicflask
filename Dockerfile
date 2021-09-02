@@ -5,5 +5,6 @@ LABEL author="khaja"
 WORKDIR /basicflask
 COPY requirements.txt /basicflask
 RUN pip install -r requirements.txt
+COPY . /basicflask
 EXPOSE 8000
 CMD ["python", "app.py"] 
